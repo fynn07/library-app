@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Library App</h1>
+        </div>
+        <div class="content">
+            <div class="book-information-input">
+                <div class="book-information-section">
+                    <p>Name of Book: </p>
+                    <input type="text" id="book-name-info" required>
+                </div>
+                <div class="book-information-section">
+                    <p>Name of Author: </p>
+                    <input type="text" id="book-author-info" required>
+                </div>
+                <div class="book-information-section">
+                    <P>Number of Pages: </P>
+                    <input type="number" id="book-pages-info" required>
+                </div>
+                <div class="book-information-section">
+                    <p>Date Published: </p>
+                    <input type="date" id="book-date-info" required>
+                </div>
+                <div class="add-button">
+                    <button onclick="addBooktoLibrary()">Add Item</button>
+                </div>
+            </div>
+            <div class="library-contents">
+                <table id="library">
+                    <tr id="table-header">
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Published</th>
+                        <th>Read</th>
+                        <th>Remove</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

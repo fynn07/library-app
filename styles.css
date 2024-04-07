@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'karla';
+}
+
+.header{
+    text-align: center;
+    background-color: black;
+    font-size: 1.2vw;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content{
+    display: flex;
+    gap: 50px;
+    padding: 5vh 10vw;
+    height: 70vh;
+}
+
+
+.book-information-input{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.book-information-section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+.book-information-section input{
+    height: 2.5vh;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.add-button{
+    display: flex;
+    justify-content: center;
+    margin: 30px 100px 30px 0px;
+}
+
+.add-button button{
+    font-size: 1.2rem;
+    padding: 5px 20px;
+
+}
+
+.library-contents{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border: 2px solid black;
+}
+
+#table-header{
+    position: sticky;
+    top: 0;
+    outline: 1.5px solid black;
+    background-color: white;
+}
+
+
+.library-contents table{
+    border-collapse: collapse;
+}
+
+.library-contents table tr{
+    border-bottom: 1px solid black;
+}
+
+.library-contents th, .library-contents td{
+    padding: 10px 0px;
+    text-align: center;
+}
